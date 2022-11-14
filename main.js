@@ -1,3 +1,5 @@
+const navBar = document.getElementById("navBar");
+
 let navHeight = document.querySelector(".fixed").offsetHeight;
 
 const adjustHeight = () => {
@@ -13,8 +15,25 @@ const reSized = () => {
   adjustHeight();
 };
 
+const screenCheker = (condition) => {
+  if (condition) {
+    navBar.classList.remove("box-shadow-in");
+  } else {
+    navBar.classList.add("box-shadow-in");
+  }
+};
+
+const scrollHelper = () => {
+  if (scrollY === 0) {
+    screenCheker(true);
+  } else {
+    screenCheker(false);
+  }
+};
+
 document.documentElement.style.setProperty(
   "--scroll-padding",
   navHeight + 47 + "px"
 );
 window.addEventListener("resize", () => reSized());
+document.addEventListener("scroll", () => scrollHelper());
