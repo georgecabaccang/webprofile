@@ -14,6 +14,11 @@
   background: rgb(227, 225, 226);
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-padding, 50px);
+}
+
 .height-20 {
   height: 15vh;
 }
