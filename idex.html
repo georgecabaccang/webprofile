@@ -10,6 +10,13 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="main.js" defer></script>
     <link rel="stylesheet" href="index.css" />
     <link rel="icon" href="./images/for-logo.png" />
@@ -19,26 +26,29 @@
     <!-- Header -->
     <header class="fixed">
       <nav
-        class="navbar navbar-expand-md nav-bg navbar-light height-20 border"
+        class="navbar navbar-expand-md nav-bg navbar-light height-20"
         id="navBar"
       >
-        <div class="container">
+        <div class="container-fluid">
           <div class="logo-size">
-            <a href="#" class="navbar-brand"
-              ><img
+            <a href="#" class="navbar-brand">
+              <img
                 src="./images/output-onlinepngtools.png"
                 alt="i-don't-know"
                 class="logo-size"
               />
-              <h2 class="d-inline-block">Sukwigly</h2></a
-            >
+              <h2 class="d-inline-block" id="brand-name">Sukwigly</h2>
+            </a>
           </div>
 
           <button
             class="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navmenu"
+            data-toggle="collapse"
+            data-target="#navmenu"
+            aria-controls="navmenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -68,12 +78,24 @@
       <!-- About Me -->
 
       <section
-        class="bg-secondary text-light p-5 text-center height-80 margin-15"
+        class="sectionOne-bg text-dark p-5 text-center height-80 margin-15 d-flex align-items-center"
       >
         <div class="container" id="home">
-          <div class="d-sm-flex">
-            <div>
-              <h1>About</h1>
+          <div class="row row-height">
+            <div class="col-6 offset-1 py-5">
+              <h2>George Alfred Cabaccang</h2>
+              <p>
+                A licensed Mechanical Engineer who's apiring to be a
+                Web/Software Developer. Is it weird? Yeah, I think so, too.
+                Anyway, I like it, so, yeah.
+              </p>
+            </div>
+            <div class="col-4 p-1">
+              <img
+                src="./images/picture.png"
+                alt="a-picture"
+                class="img-fluid rounded-circle"
+              />
             </div>
           </div>
         </div>

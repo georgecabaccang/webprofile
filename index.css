@@ -4,19 +4,20 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-
-.logo-size {
-  height: 70px;
-}
-
-.nav-bg {
-  background: rgb(227, 225, 226);
+  font-family: "Gochi Hand", cursive;
 }
 
 html {
   scroll-behavior: smooth;
   scroll-padding-top: var(--scroll-padding, 50px);
+}
+
+.logo-size {
+  width: 70px;
+}
+
+.nav-bg {
+  background: rgb(206, 206, 206);
 }
 
 .height-20 {
@@ -35,9 +36,18 @@ html {
   position: fixed;
   top: 0;
   width: 100vw;
+  z-index: 1;
 }
 
 .box-shadow-in {
   box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.215);
   transition: box-shadow 0.1s linear;
+}
+
+.row-height {
+  height: 50vh;
+}
+
+.sectionOne-bg {
+  background: #e3e1e2;
 }
