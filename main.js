@@ -5,7 +5,7 @@ let navHeight = document.querySelector(".fixed").offsetHeight;
 const adjustHeight = () => {
   document.documentElement.style.setProperty(
     "--scroll-padding",
-    navHeight + 47 + "px"
+    navHeight + 40 + "px"
   );
   console.log(navHeight);
 };
@@ -33,7 +33,7 @@ const scrollHelper = () => {
 
 document.documentElement.style.setProperty(
   "--scroll-padding",
-  navHeight + 47 + "px"
+  navHeight + 40 + "px"
 );
 window.addEventListener("resize", () => reSized());
 document.addEventListener("scroll", () => scrollHelper());

@@ -26,23 +26,23 @@
     <!-- Header -->
     <header class="fixed">
       <nav
-        class="navbar navbar-expand-md nav-bg navbar-light height-20"
+        class="navbar navbar-expand-md nav-bg navbar-light nav-spacing py-md-0 py-2"
         id="navBar"
       >
         <div class="container-fluid">
-          <div class="logo-size">
+          <div class="ml-3">
             <a href="#" class="navbar-brand">
               <img
                 src="./images/output-onlinepngtools.png"
                 alt="i-don't-know"
-                class="logo-size"
+                class="nav-logo vertical-align-bottom"
               />
-              <h2 class="d-inline-block" id="brand-name">Sukwigly</h2>
+              <h2 class="d-inline-block m-0" id="brand-name">Sukwigly</h2>
             </a>
           </div>
 
           <button
-            class="navbar-toggler"
+            class="navbar-toggler mr-3"
             type="button"
             data-toggle="collapse"
             data-target="#navmenu"
@@ -53,13 +53,15 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navmenu">
+          <div class="collapse navbar-collapse nav-menu" id="navmenu">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
                 <a href="#" class="nav-link p-4" id="aboutMe">About Me</a>
               </li>
               <li class="nav-item">
-                <a href="#projects" class="nav-link linkToActive p-4">Skills</a>
+                <a href="#projects" class="nav-link linkToActive p-4"
+                  >Projects</a
+                >
               </li>
               <li class="nav-item">
                 <a href="#tools" class="nav-link p-4">Tools</a>
@@ -78,19 +80,23 @@
       <!-- About Me -->
 
       <section
-        class="sectionOne-bg text-dark p-5 text-center height-80 margin-15 d-flex align-items-center"
+        class="sectionOne-bg text-dark p-5 text-center vh-100 margin-5 d-flex flex-md-column justify-content-md-center"
       >
         <div class="container" id="home">
-          <div class="row row-height">
-            <div class="col-6 offset-1 py-5">
-              <h2>George Alfred Cabaccang</h2>
-              <p>
-                A licensed Mechanical Engineer who's apiring to be a
-                Web/Software Developer. Is it weird? Yeah, I think so, too.
-                Anyway, I like it, so, yeah.
-              </p>
+          <div class="row row-height d-flex">
+            <div
+              class="col-lg-6 col-md-12 col-sm-12 offset-lg-1 offset-md-0 order-lg-1 order-2 py-md-5 d-flex align-items-center"
+            >
+              <div>
+                <h2>George Alfred Cabaccang</h2>
+                <p>
+                  A licensed Mechanical Engineer who's apiring to be a
+                  Web/Software Developer. Is it weird? Yeah, I think so, too.
+                  Anyway, I like it, so, yeah.
+                </p>
+              </div>
             </div>
-            <div class="col-4 p-1">
+            <div class="col-lg-4 col-md-12 p-md-1 order-lg-2 order-1">
               <img
                 src="./images/picture.png"
                 alt="a-picture"
@@ -104,11 +110,60 @@
       <!-- End of About Me -->
       <!-- Projects -->
 
-      <section class="bg-secondary text-light p-5 text-center height-80">
+      <section class="sectionTwo-bg text-light p-5 text-center">
         <div class="container" id="projects">
-          <div class="d-sm-flex">
-            <div>
-              <h1>Projects</h1>
+          <div class="row">
+            <div class="col-12">
+              <h1 class="projects-h1">Projects</h1>
+              <div class="container-fluid">
+                <div
+                  class="row d-flex justify-content-center height-lg-60 p-md-4"
+                >
+                  <div
+                    class="col-lg-3 col-md-4 col-12 mx-lg-4 mx-md-auto my-2 py-3 projects-border"
+                  >
+                    <img
+                      src="https://image.freepik.com/free-vector/ordering-goods-online-internet-store-online-shopping-niche-e-commerce-website-mother-buying-babies-clothes-footwear-toys-infant-accessories-vector-isolated-concept-metaphor-illustration_335657-2764.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <h5 class="text-small">E Commerce</h5>
+                    <p class="m-0 p-0">
+                      Ecommerce or electronic commerce refers to a business
+                      model that involves sales transactions being done on the
+                      web.
+                    </p>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-12 mx-lg-4 mx-md-auto my-2 py-3 projects-border"
+                  >
+                    <img
+                      src="https://templatemo.com/thumbnails-360/tm-551-stand-blog.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <h5>Blog</h5>
+                    <p class="m-0 p-0">
+                      A blog, short for weblog, is a frequently updated web page
+                      used for personal commentary or business content.
+                    </p>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-12 mx-lg-4 mx-md-auto my-2 py-3 projects-border"
+                  >
+                    <img
+                      src="https://images-platform.99static.com//lMcieabfEEu3XddJMAwHQnMvLAw=/134x0:1465x1331/fit-in/500x500/99designs-contests-attachments/72/72487/attachment_72487640"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <h5>Online Booking System</h5>
+                    <p class="m-0 p-0">
+                      An online booking system lets customers book with you
+                      online. Less human interaction.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -116,36 +171,253 @@
 
       <!-- End of Projects -->
       <!-- Tools -->
-      <section class="bg-secondary text-light p-5 text-center height-80">
+      <section class="bg-light text-dark p-5 m-1 text-center media-height">
         <div class="container" id="tools">
           <div class="d-sm-flex">
-            <div>
+            <div class="col-12">
               <h1>Tools</h1>
+              <div class="container-fluid">
+                <!-- First Row -->
+                <div class="row d-flex justify-content-center p-md-3">
+                  <div class="col-lg-2 col-md-3 col-6">
+                    <img
+                      src="https://teejaecalinao.github.io/charles-sample/images/html5.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-lg-2 col-md-3 col-6">
+                    <img
+                      src="https://teejaecalinao.github.io/charles-sample/images/css3.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-lg-2 col-md-3 col-6">
+                    <img
+                      src="https://teejaecalinao.github.io/charles-sample/images/bs.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-lg-2 col-md-3 col-6">
+                    <img
+                      src="https://teejaecalinao.github.io/capstone1-soryu/images/logo-javascript.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-lg-2 col-md-3 col-6">
+                    <img
+                      src="https://teejaecalinao.github.io/capstone1-soryu/images/logo-git.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-lg-2 col-md-3 col-6">
+                    <img
+                      src="https://teejaecalinao.github.io/capstone1-soryu/images/logo-sublime-text-3.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <!-- Enf of First Row -->
+                <!-- Second Row -->
+                <div class="row d-flex justify-content-center p-md-3">
+                  <div class="col-lg-2 col-md-3 col-6">
+                    <img
+                      src="https://teejaecalinao.github.io/capstone1-soryu/images/logo-gitlab-ci-cd.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-lg-2 col-md-3 col-6">
+                    <img
+                      src="https://teejaecalinao.github.io/capstone1-soryu/images/logo-react.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-lg-2 col-md-3 col-6">
+                    <img
+                      src="https://teejaecalinao.github.io/capstone1-soryu/images/logo-heroku.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-lg-2 col-md-3 col-6">
+                    <img
+                      src="https://teejaecalinao.github.io/capstone1-soryu/images/logo-mongodb.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-lg-2 col-md-3 col-6">
+                    <img
+                      src="https://teejaecalinao.github.io/capstone1-soryu/images/logo-nodejs.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-lg-2 col-md-3 col-6">
+                    <img
+                      src="https://teejaecalinao.github.io/capstone1-soryu/images/logo-postman.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <!-- End of Second Row -->
+              </div>
             </div>
           </div>
         </div>
       </section>
       <!-- End of Tools -->
       <!-- Contact -->
-      <section class="bg-secondary text-light p-5 text-center height-80">
-        <div class="container" id="contact">
-          <div class="d-sm-flex">
-            <div>
+      <section class="bg-secondary text-light p-md-5 p-3 text-center">
+        <div class="container-fluid" id="contact">
+          <div class="row d-flex justify-content-center">
+            <div class="col-12">
               <h1>Contact</h1>
+              <div class="row justify-content-center pt-1">
+                <div class="col-md-2 col-3">
+                  <a
+                    href="https://gitlab.com/georgesycabaccang"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://www.svgrepo.com/show/341849/gitlab.svg"
+                      alt=""
+                      class="img-fluid logo-size"
+                    />
+                  </a>
+                </div>
+                <div class="col-md-2 col-3">
+                  <a
+                    href="https://www.linkedin.com/in/george-cabaccang-969171246"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://www.svgrepo.com/show/922/linkedin.svg"
+                      alt=""
+                      class="img-fluid logo-size"
+                    />
+                  </a>
+                </div>
+                <div class="col-md-2 col-3">
+                  <a href="https://github.com/georgecabaccang" target="_blank">
+                    <img
+                      src="https://www.svgrepo.com/show/332084/github.svg"
+                      alt=""
+                      class="img-fluid logo-size"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="row d-flex justify-content-around pt-5">
+                <div
+                  class="col-lg-5 bg-white text-dark contact-border order-2 mt-3"
+                >
+                  <h3>Map</h3>
+                  <div class="mapouter">
+                    <div class="gmap_canvas">
+                      <iframe
+                        width="600"
+                        height="300"
+                        id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=mall%20of%20asia&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0"
+                        scrolling="no"
+                        marginheight="0"
+                        marginwidth="0"
+                      ></iframe
+                      ><a href="https://123movies-to.org"></a><br /><style>
+                        .mapouter {
+                          position: relative;
+                          text-align: center;
+                          height: 100%;
+                          width: 100%;
+                        }</style
+                      ><a href="https://www.embedgooglemap.net"
+                        >show google map on website</a
+                      ><style>
+                        .gmap_canvas {
+                          overflow: hidden;
+                          background: none !important;
+                          height: 100%;
+                          width: 100%;
+                        }
+                      </style>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-5 bg-white text-dark py-2 contact-border mt-3"
+                >
+                  <h3>Message Me</h3>
+                  <form>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="form-group pt-2">
+                            <label for="name">Name</label>
+                            <input
+                              type="text"
+                              class="form-control input-size"
+                              id="name"
+                              placeholder="Your Name"
+                              required
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="email"
+                              aria-describedby="emailHelp"
+                              placeholder="name@example.com"
+                              required
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-6 pt-2">
+                          <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea
+                              class="form-control"
+                              id="message"
+                              rows="5"
+                              required
+                            ></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        class="btn btn-secondary col-12 pt-2"
+                        data-toggle="modal"
+                        data-target="#modal"
+                      >
+                        Submit Email
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <!-- End of Contact -->
       <!-- Footer -->
-      <section class="bg-secondary text-light p-5 text-center height-80">
-        <div class="container" id="footer">
-          <div class="d-sm-flex">
-            <div>
-              <h1>Footer</h1>
-            </div>
-          </div>
-        </div>
+      <section class="nav-bg text-dark mt-5 py-3 text-center">
+        <div>George Alfred Sy Cabaccang</div>
+        <div>Full-Stack Developer</div>
+        <div>© All Rights Reserved</div>
       </section>
       <!-- End of Footer -->
     </main>

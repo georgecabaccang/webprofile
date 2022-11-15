@@ -11,25 +11,64 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: var(--scroll-padding, 50px);
 }
+body {
+  background-image: linear-gradient(to bottom right, white, #432100);
+}
+
+.nav-logo {
+  width: 40px;
+}
+
+.vertical-align-bottom {
+  vertical-align: bottom;
+}
 
 .logo-size {
   width: 70px;
 }
 
 .nav-bg {
-  background: rgb(206, 206, 206);
+  background: rgb(216, 216, 216);
+}
+
+.nav-spacing {
+  padding: 0;
+}
+
+.nav-menu {
+  background: rgba(216, 216, 216, 0.3);
+}
+
+@media (min-width: 768px) {
+  .media-height {
+    height: 60vh;
+  }
+}
+
+@media (min-width: 1000px) {
+  .media-height {
+    height: 85vh;
+  }
 }
 
 .height-20 {
   height: 15vh;
 }
 
-.height-80 {
+.height-40 {
+  height: 40vh;
+}
+
+.height-60 {
+  height: 60vh;
+}
+
+.height-85 {
   height: 85vh;
 }
 
-.margin-15 {
-  margin-top: 15vh;
+.margin-5 {
+  margin-top: 5vh;
 }
 
 .fixed {
@@ -49,5 +88,27 @@ html {
 }
 
 .sectionOne-bg {
-  background: #e3e1e2;
+  background-image: linear-gradient(to bottom right, white, #432100);
+}
+
+.sectionTwo-bg {
+  background: #5c361e6d;
+}
+
+.projects-border {
+  border: 2px solid #432100;
+  border-radius: 1rem;
+  box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.4);
+}
+
+.projects-h1 {
+  color: #432100;
+}
+
+.input-size {
+  line-height: 100px !important;
+}
+
+.contact-border {
+  border-radius: 0.5rem;
 }
